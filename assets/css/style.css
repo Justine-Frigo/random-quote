@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #725049;
+  color: rgb(241, 245, 249);
+}
+body main h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+body main h2 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 3%;
+  font-size: 30px;
+}
+body main .quote {
+  background-color: #f6c5b6;
+  color: rgb(30, 41, 59);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+body main img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 3px solid #725049;
+}
+body main .quoteBlock {
+  text-align: center;
+}
+body main .quoteBlock blockquote {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 24px;
+}
+body main .quoteBlock p {
+  margin-top: 7%;
+  font-size: 18px;
+}
+body main #quoteContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #quoteContainer #randomBtn {
+  font-size: 20px;
+  padding: 5px 8px;
+  color: rgb(30, 41, 59);
+  background-color: #f6c5b6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color ease-in-out 300ms;
+}
+body main #quoteContainer #randomBtn:hover {
+  background-color: rgba(246, 197, 182, 0.8078431373);
+  transition: background-color ease-in-out 300ms;
+}/*# sourceMappingURL=style.css.map */

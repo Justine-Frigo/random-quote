@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&display=swap");
+
+$fontOne: "Acme", sans-serif;
+$fontTwo: "Dancing Script", cursive;
+$background: #725049;
+$backgroundTwo: #f6c5b6;
+$textColorOne: rgb(241 245 249);
+$slate: rgb(30 41 59);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $fontOne;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $background;
+  color: $textColorOne;
+
+  main {
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 3%;
+      margin-bottom: 5%;
+      font-size: 40px;
+      text-decoration: underline;
+      text-decoration-thickness: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 3%;
+      font-size: 30px;
+    }
+
+    .quote {
+      background-color: $backgroundTwo;
+      color: $slate;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+      border: 3px solid $background;
+    }
+
+    .quoteBlock {
+      text-align: center;
+
+      blockquote {
+        text-align: center;
+        font-family: $fontTwo;
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      p {
+        margin-top: 7%;
+        font-size: 18px;
+      }
+    }
+
+    #quoteContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #randomBtn {
+        font-size: 20px;
+        padding: 5px 8px;
+        color: $slate;
+        background-color: $backgroundTwo;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color ease-in-out 300ms;
+
+        &:hover {
+          background-color: #f6c5b6ce;
+          transition: background-color ease-in-out 300ms;
+        }
+      }
+    }
+  }
+}
