@@ -18,7 +18,7 @@ function renderQuote(quote) {
   const quoteContainer = document.getElementById("quoteContainer");
   quoteContainer.innerHTML = `
         <div class="quote">
-        <img src="${quote.photo}" alt="${quote.author}">
+        <img src="${quote.photo == '' || quote.photo.includes('capture') ? './assets/anonymous_emblem.png' : quote.photo}" alt="${quote.author}">
         <div class="quoteBlock">
             <blockquote>${quote.quote}</blockquote>
             <p>- ${quote.author}</p></div>
