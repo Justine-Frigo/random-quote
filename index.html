@@ -8,13 +8,18 @@
     <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Random quote generator</h1>
+      <h2>
+        Welcome to my random quote generator ! Please, click on the button and
+        enjoy !
+      </h2>
+
+      <button id="randomBtn">Generate random quote</button>
+    </header>
     <main>
-        <h1>Random quote generator</h1>
-        <h2>Welcome to my random quote generator ! Please, click on the button and enjoy !</h2>
-      <div id="quoteContainer">
-        <button id="randomBtn">Generate random quote</button>
-      </div>
+      <div id="loader" class="loader"></div>
+      <div id="quoteContainer"></div>
     </main>
     <footer></footer>
   </body>

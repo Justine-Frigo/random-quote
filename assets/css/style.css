@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Acme", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,74 +11,92 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  background-color: #725049;
-  color: rgb(241, 245, 249);
+  background-color: #0f172a;
+  color: #f1f5f9;
 }
-body main h1 {
+body header {
   text-align: center;
-  font-weight: 600;
-  margin-top: 3%;
-  margin-bottom: 5%;
+}
+body header h1 {
   font-size: 40px;
+  margin-bottom: 2%;
   text-decoration: underline;
   text-decoration-thickness: 5px;
 }
-body main h2 {
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 3%;
-  font-size: 30px;
+body header h2 {
+  font-size: 28px;
+  margin-bottom: 4%;
+}
+body header #randomBtn {
+  font-size: 18px;
+  background-color: #9a3412;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: #f1f5f9;
+  transition: background-color ease-in-out 300ms;
+}
+body header #randomBtn:hover {
+  background-color: rgba(154, 52, 18, 0.7411764706);
+  transition: background-color ease-in-out 300ms;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main .quote {
-  background-color: #f6c5b6;
-  color: rgb(30, 41, 59);
-  position: fixed;
+  border-radius: 15px;
+  background-color: #020617;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 600px;
+}
+body main .quote img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body main .quote blockquote {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+body main .quote p {
+  font-size: 16px;
+  text-align: right;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body main .loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 20px;
+  z-index: 9999;
+  display: none;
 }
-body main img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
-  border: 3px solid #725049;
-}
-body main .quoteBlock {
-  text-align: center;
-}
-body main .quoteBlock blockquote {
-  text-align: center;
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  font-size: 24px;
-}
-body main .quoteBlock p {
-  margin-top: 7%;
-  font-size: 18px;
-}
-body main #quoteContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body main #quoteContainer #randomBtn {
-  font-size: 20px;
-  padding: 5px 8px;
-  color: rgb(30, 41, 59);
-  background-color: #f6c5b6;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color ease-in-out 300ms;
-}
-body main #quoteContainer #randomBtn:hover {
-  background-color: rgba(246, 197, 182, 0.8078431373);
-  transition: background-color ease-in-out 300ms;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
